@@ -1,4 +1,4 @@
-console.log("Hello")
+
         const weatherForm = document.querySelector('form')
         const inputValue = document.querySelector('input')
         const messageOne = document.getElementById('message-1')
@@ -13,7 +13,7 @@ console.log("Hello")
             messageTwo.textContent = ''
         
 
-            const url = 'http://localhost:3000/weather?address=' + location
+            const url = '/weather?address=' + location
             console.log(url)
             fetch(url).then((response) => {
                 response.json().then((data) => {
